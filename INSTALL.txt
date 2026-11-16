@@ -1,0 +1,114 @@
+载具同乘 Full 1.2 | Ride Together Full 1.2
+
+中文
+
+使用当前角色驾驶、第一人称驾驶，并配置后排角色和外观。
+无需安装 Draco。Full 与 Lite 不兼容，安装前请先移除旧版同乘。
+安装、更新、卸载前均需退出游戏和相关启动器。
+
+安装 — Aurora
+1. 解压本包。
+2. 在「第三方模块」添加 RideTogetherFullRuntime.asi，开启「启用模块」，并确认该模块已启用。
+3. 在「Mod 管理器」导入 RideTogether-Full-1.2-Resources.zip 并启用。
+4. 启动游戏即可。
+
+安装 — 手动
+需已配置好 ASI 加载器和游戏 Mod 资源加载环境，本包不附带加载器。
+1. 将 RideTogetherFullRuntime.asi 放入加载器指定目录，通常为 HT\Binaries\Win64\plugins。
+2. 解压 RideTogether-Full-1.2-Resources.zip，将其中的 RideTogetherFull 文件夹放入 HT\Content\Paks\~mods。
+3. 启动游戏。手动安装和管理器安装二选一，不要重复安装。
+
+使用
+- 手机菜单打开「载具同乘」，或按主键盘 =/+ 开关面板；Esc 关闭。
+- 选择车辆，设置驾驶角色、后排角色及外观，点击「保存配置」。
+- 副驾驶在游戏原生同行设置中选择。
+
+旧版卸载
+以下路径均从游戏 HT 文件夹开始。
+
+Full 1.0（完整版）
+解压原安装包，运行其中的 Uninstall.cmd，选择原游戏目录并确认。
+脚本会备份并移除旧版文件、个人配置和日志；其他 Mod 使用的共享加载器会保留。
+
+Lite 1.0（带脚本的轻量版）
+运行 Lite 原安装包中的 Uninstall.cmd，选择原游戏目录并确认。
+不要使用 Full 的卸载脚本。
+
+Lite 纯资源版（只有 .pak / .utoc / .ucas）
+在 Mod 管理器中移除对应 Lite；手动安装的，删除 HT\Content\Paks\~mods\RideTogetherLite。
+
+Full 1.1（连同旧包附带的 Anomaly 一起卸载）
+删除以下文件或文件夹：
+  HT\Binaries\Win64\Anomaly
+  HT\Binaries\Win64\dwmapi.dll
+  HT\Binaries\Win64\AnomalyLauncher.exe
+  HT\Content\Paks\~mods\RideTogetherFullAnomaly
+若有旧 Anomaly 遗留的 dwmapi.dll.disabled、AnomalyLauncher.json，也一并删除。
+这会移除 Anomaly 的其他插件和设置，有需要请先备份。
+dwmapi.dll 只删除属于旧 Anomaly 的那份；若已被其他工具替换，请保留。
+不要删除整个 Win64 或 ~mods 文件夹。
+
+1.2 卸载
+Aurora：移除同乘模块和对应资源 Mod。
+手动：删除本次放入的 RideTogetherFullRuntime.asi 和 ~mods\RideTogetherFull 文件夹。
+独立 Draco、其他 Mod、个人设置和共享加载器无需删除。
+
+兼容说明
+Global + Aurora 已完成本次实机验证。Anomaly 原生插件接入尚未完成，需上游接口适配并完成联合测试后另行提供；本包不包含 Anomaly 插件或 Core。
+
+------------------------------------------------------------
+English
+
+Drive as your current character, use first-person driving, and configure rear passengers and appearances.
+Draco is not required. Full and Lite are incompatible; remove previous Ride Together editions first.
+Close the game and relevant launchers before installing, updating or uninstalling.
+
+Install — Aurora
+1. Extract this package.
+2. Add RideTogetherFullRuntime.asi under Third-party Modules. Turn on Enable Modules and enable the module itself.
+3. Import RideTogether-Full-1.2-Resources.zip in Mod Manager and enable it.
+4. Launch the game.
+
+Install — Manual
+Requires an existing ASI loader and working game Mod resource loading setup. No loader is included.
+1. Place RideTogetherFullRuntime.asi in your loader's designated folder, usually HT\Binaries\Win64\plugins.
+2. Extract RideTogether-Full-1.2-Resources.zip and place its RideTogetherFull folder in HT\Content\Paks\~mods.
+3. Launch the game. Choose either manual or manager installation; do not install duplicate copies.
+
+Use
+- Open Ride Together from the phone menu or toggle it with the main-keyboard =/+ key. Esc closes the panel.
+- Select a vehicle, configure the driver, rear passengers and appearances, then save.
+- Select the front companion using the game's own companion settings.
+
+Remove older versions
+Paths below begin at the game's HT folder.
+
+Full 1.0
+Extract the original installer package, run its Uninstall.cmd, select the original game folder and confirm.
+The script backs up and removes old files, personal settings and logs. Shared loaders used by other mods are retained.
+
+Lite 1.0 — script-based edition
+Run Uninstall.cmd from the original Lite package, select the original game folder and confirm.
+Do not use Full's uninstall script.
+
+Lite — resource-only edition (.pak / .utoc / .ucas)
+Remove Lite through your Mod manager. For manual installations, delete HT\Content\Paks\~mods\RideTogetherLite.
+
+Full 1.1 — including its bundled Anomaly framework
+Delete:
+  HT\Binaries\Win64\Anomaly
+  HT\Binaries\Win64\dwmapi.dll
+  HT\Binaries\Win64\AnomalyLauncher.exe
+  HT\Content\Paks\~mods\RideTogetherFullAnomaly
+Also remove dwmapi.dll.disabled and AnomalyLauncher.json if left by the old Anomaly installation.
+This removes other Anomaly plugins and settings too; back them up if needed.
+Only delete dwmapi.dll if it belongs to the old Anomaly installation. Keep it if another tool has replaced it.
+Do not delete the entire Win64 or ~mods folder.
+
+Uninstall 1.2
+Aurora: remove the Ride Together module and its resource Mod.
+Manual: remove the installed RideTogetherFullRuntime.asi and ~mods\RideTogetherFull folder.
+Keep independent Draco, unrelated mods, personal settings and shared loaders.
+
+Compatibility
+Global + Aurora passed this gameplay test. Native Anomaly plugin integration is not yet available; it will be provided after upstream interface support and joint testing. This package includes no Anomaly plugin or Core.
